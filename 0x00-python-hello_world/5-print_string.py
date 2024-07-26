@@ -6,4 +6,5 @@
 #You should write only a maximum of 5 lines of code
 
 str = "Holberton School"
-
+print(f'{str*3}\n')
+print('Holberton')

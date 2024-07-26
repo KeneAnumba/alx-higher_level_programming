@@ -60,4 +60,7 @@ The major advantage of str.format() over the modulo method is that it supports f
 
         print(f"Your name is {name}. You are {age}. You study {Department} at {school}.") outputs same result as in the above ones.
         print(f"{2*4}") outputs 8
-        
+        print(f"Your name is {name.upper()}")  outputs Your name is EMEKA
+        print(f"{[2**n for n in range(3,9)]}") outputs [8,16,32,64,128,256]
+       
+ 
