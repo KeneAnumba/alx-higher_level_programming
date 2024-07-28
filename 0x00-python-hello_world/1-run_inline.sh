@@ -1,5 +1,7 @@
 #!/usr/bin/bash
 
+
+# 1. Run inline
 #Here, I am writing a Shell script that runs a python code
 #The python code will be saved in the environment variable $PYCODE
 #To export the python code to $PYCODE env variable, I did this:      export PYCODE="print('hello world, it is me again')"

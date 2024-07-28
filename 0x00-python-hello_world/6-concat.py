@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 
+
+# 6. Play with strings
 #Here I am to complete a source code to print "Welcome to Holberton School!"
 #You are not allowed any loops or conditional statements
 #You have to use the variables str1 and str2 in your new line of code

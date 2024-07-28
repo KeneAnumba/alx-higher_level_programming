@@ -1,0 +1,14 @@
+
+Python interpreters are usually installed in this path /usr/loca/bin/python3.4  (mine is actually in /usr/bin/python3.8.7)
+
+To invoke the python interpreter in CLI, just type 'python'
+
+To exit the python interpreter, type 'CTRL D' for unix and 'CTRL Z' for windows
+
+Python uses '\' as escape character in strings
+   e.g print(f'obi isn\'t a big fan of Emeka who is {20+8} years old')  outputs obi isn't a big fan of Emeka who is 28 years old
+
+If you don't want python to make '\' serve as escape character in string literals, use raw strings by adding r before the first quote
+  e.g print(r'C:\Obi\Emeka\Nneka') outputs C:\Obi\Emeka\Nneka
+
+
