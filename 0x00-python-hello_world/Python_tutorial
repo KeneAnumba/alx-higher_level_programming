@@ -11,4 +11,79 @@ Python uses '\' as escape character in strings
 If you don't want python to make '\' serve as escape character in string literals, use raw strings by adding r before the first quote
   e.g print(r'C:\Obi\Emeka\Nneka') outputs C:\Obi\Emeka\Nneka
 
+Two string literals next to each other are concatenated automatically
+   e.g 'py' 'thon' outputs 'python'
+       'py' 'thon' ' ' 'is' ' ' 'a'' ' 'good'' ' 'programming'' ' 'language' outputs python is a good programming language
+The above works only for string literals next to each other, otherwise when you want to concatenate, use +
+    e.g    x= 'py'
+           y = 'thon'
+          x+y outputs 'python'
+
+Strings can be indexed. The first character of a string has index of 0. A character is a string of size one.
+  word = 'Python'
+  word[0] outputs P | word[-1] outputs n
+  word[1] outputs y | word[-2] outputs o
+  word
+While indexing can be used to obtain individual characters, slicing allows one to obtain substring.
+ e.g word = 'python'
+     word[0:3] outputs pyt  #notice how character of index 0 is included while that of index 3 is excluded
+     word[:2]+ word[2:] outputs python
+     word[-3:] outputs hon  
+The idea behind including the starting index and excluding the ending index is such that s[:i]+ s[i:]= s
+In slicing, an omitted first index defaults to 0 index while an omitted second index defaults to the size of the string being sliced.
+
+Python strings are immutable, hence cannot be changed by assigning an indexed position to a different character.
+e.g word = 'python'
+    word[0] = 'J' will result in a TypeError.
+    word[:2] = 'Jy' will result in a TypeError.
+  'J' + word[1:] outputs Jython.
+
+
+
+###### Lists ######
+Like strings, lists can be indexed and sliced. Indexing and slicing are done on the elements of the list (and not on characters as in strings) 
+to return an element or a sublist respectively.
+e.g
+     My_list = [1,4,7,3,9]
+     My_list[1] outputs 4
+     My_list[-1] outputs 9
+     My_list[-3:] outputs [7,3,9]
+     My_list[:] outputs [1,4,7,3,9]  #returns a new copy of the list.
+
+Lists also support concatenation
+  list1 = [1,2,3]
+  list2 = [4,5,6]
+  list1 + list2 outputs [1,2,3,4,5,6]
+
+
+Unlike strings, lists are mutable - lists can be changed in situ by assigning an indexed position or a slice to different variables.
+  My_list[0] = 5
+  My_list now outputs [5,4,7,3,9]
+  My_list[0:3] = [9,6,2]
+  My_list now outputs[9,6,2,3,9]
+  My_list[0:3] = []
+  My_list now outputs [3,9]
+  My_list[:] = []
+  My_list now outputs []  #every element has been cleared
+
+Lists can be nested
+e.g 
+   list1 = ['a', 'b','c']
+   list2 = ['d', 'e', 'f']
+   list3 = [list1, list2] outputs [['a', 'b', 'c'], ['d', 'e', 'f']]
+   list3[0] outputs  ['a','b','c']
+   list3[0][0] outputs 'a'
+
+
+Writing complicated programs
+e.g
+   a,b = 0,1
+   while b < 1000:
+       print(b)
+       a,b = b, a+b
+
+#note that in the code above and within the loop, the expression on the RHS is evaluated before the actual assignment is done.
+i.e it checks the value of b and the value of a+b before assigning them to the variables on the LHS. 
+
+
 

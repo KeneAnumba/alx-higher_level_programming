@@ -1,0 +1,45 @@
+#In the notes below, I am making a summary of the key points that I got from studying "Python Programming: An introduction to Computer Science, 3rd Edition" by John Zelle
+
+                          #####DEFINITION OF A MODERN COMPUTER:######
+  Modern computer can be defined as a machine that stores and manipulates information under the control of a changeable program.
+
+** 2 key points in the definition above
+   (a) Storing and manipulating information = This allows a computer to be able to perform a specific task that it was given since it can manipulate the inputs given it.
+        but there are other machines like calculator and gas pumps that can manipulate information to perform a specific task they are given but cannot be considered as modern compute
+   
+   (b) Modern computers operate under the control of changeable programs - this quality gives modern computers their versatility. While calculators and gas pumps above can just perform a singular  task, modern computers are able to perform different tasks by just changing their underlying programs.
+
+Hence for modern computers, programs (software) rule the physical machines (hardware). It is the software that determines what any machine does.
+
+The process of designing and creating software is called Programming.
+
+Program - a sequence of instructions telling a computer what to do.
+
+      ######ABOUT COMPUTER SCIENCE######
+Computer Science is not actually the study of computers. According to Edsger Dijkstra, computers are to computer science what telescopes are to astronomy.
+Computers are not actually the objects of study in Computer Science but it is an important tool.
+
+The fundamental question of computer science is "WHAT CAN BE COMPUTED?"
+
+Computer scientists use numerous techniques to answer this question: Design, analysis and experimentation.
+Design - creating an algorithm (step by step process) to solve a problem and achieve the desired result.
+  - Failing to devise an algorithm doesn't mean the problem is not solvable 
+Analysis - process of examining algorithms and problems mathematically to see whether they are solvable or not
+Experimentation - comes in when analysis fails due to complexity or problems being ill-defined to lend themselves to analysis.
+
+
+          ###### HARDWARE BASICS ########
+CPU - brain of the computer where all the computations are done.
+Memory - stores programs and data.
+       CPU can only access the information stored in the main memory (RAM - Random Access Memory)
+                RAM is fast and volatile - when power is turned off, information is this memory is lost.
+       ROM - Read Only Memory - usually for permanent storage of information.
+              Hard disk drive (HDD) - stores information as magnetic patterns on a spinning disk
+              Solid state drive (SSD) - uses electronic circuits known as flash memory.
+
+When one wants to fire up a program, first the instructions that comprise the program are copied from ROM to RAM and then the CPU starts executing the program in a
+fetch-decode-execute cycle (i.e the instructions is fetched from RAM, decoded to figure out what it represents and the appropriate action is then carried out)
+
+     ###### Programming Languages #######
+
+
